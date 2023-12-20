@@ -18,6 +18,15 @@ To search for charts from different providers, you can use the `helm search hub`
 helm search hub drupal
 ```
 
+```
+URL                                                     CHART VERSION   APP VERSION     DESCRIPTION                                       
+https://artifacthub.io/packages/helm/bitnami-ak...      12.5.10         9.4.8           Drupal is one of the most versatile open source...
+https://artifacthub.io/packages/helm/bitnami/dr...      16.1.8          10.2.0          Drupal is one of the most versatile open source...
+https://artifacthub.io/packages/helm/cetic/drupal       0.1.0           1.16.0          Drupal is a free and open-source web content ma...
+https://artifacthub.io/packages/helm/rock8s/drupal      0.0.1           latest          open source software you can use to create a be...
+
+```
+
 This will return a list of available charts along with their versions and descriptions.
 
 You can adjust the column width for better readability by using the `--max-col-width` option. For example:
@@ -25,6 +34,14 @@ You can adjust the column width for better readability by using the `--max-col-w
 
 ```bash
 helm search hub drupal --max-col-width 65
+```
+
+```
+URL                                                     CHART VERSION   APP VERSION     DESCRIPTION                                                      
+https://artifacthub.io/packages/helm/bitnami-aks/drupal 12.5.10         9.4.8           Drupal is one of the most versatile open source content manage...
+https://artifacthub.io/packages/helm/bitnami/drupal     16.1.8          10.2.0          Drupal is one of the most versatile open source content manage...
+https://artifacthub.io/packages/helm/cetic/drupal       0.1.0           1.16.0          Drupal is a free and open-source web content management framew...
+https://artifacthub.io/packages/helm/rock8s/drupal      0.0.1           latest          open source software you can use to create a beautiful website...
 ```
 
 ### Security tip:
