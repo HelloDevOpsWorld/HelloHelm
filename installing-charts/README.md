@@ -10,12 +10,13 @@ helm install -h | less
 
 Helm follows a series of 5 stages during the installation process:
 
-1. Chart Loading: The chart is loaded into Helm.
-2. Value Parsing: The values specified for the chart are parsed.
-3. Template Execution: The templates within the chart are executed.
-4. YAML Rendering: The executed templates are rendered into YAML files.
-5. Kubernetes Deployment: The rendered YAML files are sent to Kubernetes for deployment.
-6. The initial four stages primarily involve local data processing, where Helm operates on the same computer where the helm command is executed.
+1. **Chart Loading**: The chart is loaded into Helm.
+2. **Value Parsing**: The values specified for the chart are parsed.
+3. **Template Execution**: The templates within the chart are executed.
+4. **YAML Rendering**: The executed templates are rendered into YAML files.
+5. **Kubernetes Deployment**: The rendered YAML files are sent to Kubernetes for deployment. 
+
+The initial four stages primarily involve local data processing, where Helm operates on the same computer where the helm command is executed.
 
 However, in the final stage, Helm transmits the processed data to Kubernetes. Subsequently, Helm and Kubernetes engage in bidirectional communication until the release is either accepted or rejected.
 
